@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "medievalization"
+version = "0.1.0"
+description = "An advanced civilisation game"
+authors = ["Virinas-code <alexcode228@gmail.com>"]
+license = "GPL-3.0-or-later"
+readme = "README.md"
+
+packages = [
+    { include = "web", from = "src" },
+    { include = "server", from = "src" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+Flask = "^3.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

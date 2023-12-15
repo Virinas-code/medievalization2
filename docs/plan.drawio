@@ -1,0 +1,52 @@
+<mxfile host="app.diagrams.net" modified="2023-12-14T17:20:36.621Z" agent="Mozilla/5.0 (X11; Linux x86_64; rv:121.0) Gecko/20100101 Firefox/121.0" etag="CvmsRo83UIsqP_xWTH4n" version="22.1.9" type="device">
+  <diagram name="Page-1" id="xe75f0N5k2HlHydIHAzZ">
+    <mxGraphModel dx="1114" dy="1998" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="6KGMSiI3Xrq3x6NVxnmn-2" value="&lt;h1&gt;Architecture&lt;/h1&gt;&lt;p&gt;Backend Python&lt;br&gt;Frontend Web (TypeScript)&lt;br&gt;&lt;br&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry width="190" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="6KGMSiI3Xrq3x6NVxnmn-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="6KGMSiI3Xrq3x6NVxnmn-3" target="6KGMSiI3Xrq3x6NVxnmn-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6KGMSiI3Xrq3x6NVxnmn-3" value="&lt;div&gt;Login&lt;/div&gt;&lt;div&gt;(signup)&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="240" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6KGMSiI3Xrq3x6NVxnmn-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="6KGMSiI3Xrq3x6NVxnmn-5" target="6KGMSiI3Xrq3x6NVxnmn-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6KGMSiI3Xrq3x6NVxnmn-5" value="&lt;div&gt;Vue&lt;/div&gt;&lt;div&gt;Carte&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="320" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6KGMSiI3Xrq3x6NVxnmn-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="6KGMSiI3Xrq3x6NVxnmn-6" target="6KGMSiI3Xrq3x6NVxnmn-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6KGMSiI3Xrq3x6NVxnmn-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="6KGMSiI3Xrq3x6NVxnmn-6" target="6KGMSiI3Xrq3x6NVxnmn-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6KGMSiI3Xrq3x6NVxnmn-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="6KGMSiI3Xrq3x6NVxnmn-6" target="6KGMSiI3Xrq3x6NVxnmn-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6KGMSiI3Xrq3x6NVxnmn-6" value="&lt;div&gt;Brouillard (découverte) - Grande carte mais minimap schématique (avec citadelles franches commerciales et chaines de montagnes, grandes routes gardées par citadelles) - Découverte (ressources minérales / agricoles, &lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="320" width="600" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6KGMSiI3Xrq3x6NVxnmn-9" value="&lt;div&gt;Minéraux :&lt;/div&gt;&lt;div&gt;Gameplay développé&lt;/div&gt;&lt;div&gt;avec tiers mais pas trop (or, pierre, fer)&lt;br&gt;&lt;/div&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="220" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6KGMSiI3Xrq3x6NVxnmn-11" value="&lt;div&gt;Agricole :&lt;/div&gt;&lt;div&gt;Pin, chène&lt;/div&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="220" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6KGMSiI3Xrq3x6NVxnmn-13" value="&lt;div&gt;Tuiles : gisements, forêts, route, bâtiments, champs&lt;br&gt;&lt;/div&gt;&lt;div&gt;Zones : montagnes, plaine&lt;/div&gt;&lt;div&gt;Niveaux de zoom + map&lt;br&gt;&lt;/div&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="220" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6KGMSiI3Xrq3x6NVxnmn-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.463;entryY=1.017;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="6KGMSiI3Xrq3x6NVxnmn-6" target="6KGMSiI3Xrq3x6NVxnmn-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6KGMSiI3Xrq3x6NVxnmn-17" value="Gameplay alliance intégré (armées) avec interalliances" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="440" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
