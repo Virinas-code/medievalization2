@@ -34,6 +34,15 @@ def src(filename: str) -> Response:
     return flask.send_from_directory(os.path.abspath("./"), filename)
 
 
+@server.route("/assets/<path:filename>")
+def assets(filename: str) -> Response:
+    """/assets/<path:filename>
+
+    Serve assets files
+    """
+    return flask.send_from_directory(os.path.abspath("../assets"), filename)
+
+
 @server.route("/dev")
 def dev() -> Response:
     """/dev
