@@ -4,7 +4,25 @@ Medievalization Server
 
 Main
 """
+import json
+from typing import TypedDict, TypeAlias, Union
+
 from websockets.server import WebSocketServerProtocol
+
+JSONValue: TypeAlias = Union[str, int, float, bool, None, list["JSONValue"], "JSONData"]
+JSONData: TypeAlias = dict[str, JSONValue]
+
+
+class Message(TypedDict):
+    """A message from the socket."""
+
+    type: str
+    data: JSONData
+
+
+def board(size: int) -> list[list[int]]:
+    """Makes a checkerboard."""
+    return [[int(i % 2 != j % 2) for i in range(size)] for j in range(size)]
 
 
 async def server(websocket: WebSocketServerProtocol) -> None:
@@ -12,4 +30,9 @@ async def server(websocket: WebSocketServerProtocol) -> None:
     Server
     """
     async for message in websocket:
-        await websocket.send(message)
+        data: Message = json.loads(message)
+
+        # Indev Part
+        if data["type"] == "tile":
+            print("tile")
+            await websocket.send(json.dumps({"type": "tile", "data": board(64)}))

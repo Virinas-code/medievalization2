@@ -15,6 +15,7 @@ from server import server
 async def main() -> None:
     """Start server."""
     async with serve(server, "localhost", 8765):
+        print("Running on localhost:8765")
         await asyncio.Future()
 
 
