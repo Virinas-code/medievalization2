@@ -17,10 +17,44 @@
   <link rel="shortcut icon" href="/assets/favicon/favicon.ico" />
   <link rel="manifest" href="/assets/site.webmanifest" />
 
-  <link rel="stylesheet" href="dist/css/hello.css" />
-  <script src="dist/js/hello.js" type="module"></script>
+  <link rel="stylesheet" href="dist/css/app/app.css" />
+  <script src="dist/js/app.js" type="module"></script>
  </head>
  <body>
-  <p>Hello World!</p>
+  <!-- Ressources, account -->
+  <header>
+   <div class="container">
+    Head
+   </div>
+  </header>
+
+  <!-- Game area and side panels -->
+  <main>
+   <div>
+    <div id="map"> <!-- Game area -->
+     <table id="map-area"></table>
+    </div>
+
+    <div id="overlay">
+     <br />
+     Believe me this is a modern GUI
+     <br />
+     <button>Look I can be clicked</button>
+    </div> <!-- Overlays (dialogs, GUIS, ...) -->
+   </div>
+
+   <aside>
+    <div class="container">
+     Footer
+    </div>
+   </aside> <!-- Side panel -->
+  </main>
+
+  <!-- Chat and probably other stuff -->
+  <footer>
+   <div class="container">
+    Footer
+   </div>
+  </footer>
  </body>
 </html>

@@ -25,13 +25,13 @@ def dist(filename: str) -> Response:
     return flask.send_from_directory(os.path.abspath("../dist"), filename)
 
 
-@server.route("/src/<path:filename>")
+"""@server.route("/src/<path:filename>")
 def src(filename: str) -> Response:
-    """/src/<path:filename>
+    ""/src/<path:filename>
 
     Serve source files
-    """
-    return flask.send_from_directory(os.path.abspath("./"), filename)
+    ""
+    return flask.send_from_directory(os.path.abspath("./"), filename)"""
 
 
 @server.route("/assets/<path:filename>")

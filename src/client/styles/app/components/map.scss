@@ -1,0 +1,9 @@
+main > div {
+    #overlay {
+        pointer-events: none;
+
+        button {
+            pointer-events: all;
+        }
+    }
+}
