@@ -20,9 +20,9 @@ class Message(TypedDict):
     data: JSONData
 
 
-def board(size: int) -> list[list[int]]:
+def board(width: int, height: int) -> list[list[int]]:
     """Makes a checkerboard."""
-    return [[int(i % 2 != j % 2) for i in range(size)] for j in range(size)]
+    return [[int(i % 2 != j % 2) for i in range(width)] for j in range(height)]
 
 
 async def server(websocket: WebSocketServerProtocol) -> None:
@@ -35,4 +35,4 @@ async def server(websocket: WebSocketServerProtocol) -> None:
         # Indev Part
         if data["type"] == "tile":
             print("tile")
-            await websocket.send(json.dumps({"type": "tile", "data": board(64)}))
+            await websocket.send(json.dumps({"type": "tile", "data": board(16, 9)}))

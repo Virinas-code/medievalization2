@@ -1,9 +1,41 @@
-main > div {
-    #overlay {
-        pointer-events: none;
+@import "../framework/frame.scss";
 
-        button {
-            pointer-events: all;
-        }
+main > div {
+  margin-left: $fw_frame_margin;
+  border-radius: $fw_frame_border-radius;
+  overflow: hidden;
+
+  #overlay {
+    pointer-events: none;
+
+    button {
+      pointer-events: all;
     }
+  }
+}
+
+#map-area {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  & > div {
+    display: flex;
+    flex-direction: row;
+
+    & > div {
+      background-color: #ff00ff;
+
+      width: 100px;
+      height: 100px;
+
+      &.tile_0 {
+        background-color: #f0d9b5;
+      }
+
+      &.tile_1 {
+        background-color: #b58863;
+      }
+    }
+  }
 }

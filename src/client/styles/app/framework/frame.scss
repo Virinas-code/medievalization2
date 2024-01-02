@@ -1,13 +1,26 @@
-@mixin frame {
+$fw_frame_border-radius: 5px;
+$fw_frame_margin: 5px;
+
+@mixin frame(
+  $margins: (
+    top,
+    bottom,
+    left,
+    right,
+  )
+) {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 5px;
+
+  @each $side in $margins {
+    padding-#{$side}: $fw_frame_margin;
+  }
 
   color: white;
 
   .container {
-    border-radius: 5px;
+    border-radius: $fw_frame_border-radius;
     padding: 5px;
 
     box-sizing: border-box;
@@ -29,7 +42,7 @@
       height: 100%;
 
       background-color: rgba(50, 50, 50, 0.5);
-      border-radius: 5px;
+      border-radius: $fw_frame_border-radius;
     }
   }
 }
